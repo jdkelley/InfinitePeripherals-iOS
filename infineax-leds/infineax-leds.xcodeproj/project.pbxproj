@@ -15,6 +15,7 @@
 		96554BD71D709C750017E783 /* infineax_ledsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96554BD61D709C750017E783 /* infineax_ledsTests.swift */; };
 		96554BE21D709C750017E783 /* infineax_ledsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96554BE11D709C750017E783 /* infineax_ledsUITests.swift */; };
 		96554BF41D709D5F0017E783 /* IPConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96554BF31D709D5F0017E783 /* IPConnectionState.swift */; };
+		96554BF81D70A04D0017E783 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96554BF71D70A04D0017E783 /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		96554BE11D709C750017E783 /* infineax_ledsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infineax_ledsUITests.swift; sourceTree = "<group>"; };
 		96554BE31D709C750017E783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96554BF31D709D5F0017E783 /* IPConnectionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPConnectionState.swift; sourceTree = "<group>"; };
+		96554BF51D70A0270017E783 /* DTDevices-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DTDevices-Bridging-Header.h"; sourceTree = "<group>"; };
+		96554BF61D70A0270017E783 /* DTDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDevices.h; sourceTree = "<group>"; };
+		96554BF71D70A04D0017E783 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96554BF81D70A04D0017E783 /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +133,9 @@
 		96554BEF1D709D140017E783 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				96554BF51D70A0270017E783 /* DTDevices-Bridging-Header.h */,
+				96554BF61D70A0270017E783 /* DTDevices.h */,
+				96554BF71D70A04D0017E783 /* ExternalAccessory.framework */,
 			);
 			name = Library;
 			sourceTree = "<group>";
