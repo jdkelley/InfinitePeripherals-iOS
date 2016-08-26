@@ -457,6 +457,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshuadavidkelley.infineax-leds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "infineax-leds/DTDevices-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -472,6 +473,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshuadavidkelley.infineax-leds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "infineax-leds/DTDevices-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var device = DTDevices()
 
     override func viewDidLoad() {
         super.viewDidLoad()
