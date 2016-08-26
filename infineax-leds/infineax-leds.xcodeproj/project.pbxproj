@@ -16,6 +16,7 @@
 		96554BE21D709C750017E783 /* infineax_ledsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96554BE11D709C750017E783 /* infineax_ledsUITests.swift */; };
 		96554BF41D709D5F0017E783 /* IPConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96554BF31D709D5F0017E783 /* IPConnectionState.swift */; };
 		96554BF81D70A04D0017E783 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96554BF71D70A04D0017E783 /* ExternalAccessory.framework */; };
+		96554BFA1D70A2D10017E783 /* libdtdev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96554BF91D70A2D10017E783 /* libdtdev.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		96554BF51D70A0270017E783 /* DTDevices-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DTDevices-Bridging-Header.h"; sourceTree = "<group>"; };
 		96554BF61D70A0270017E783 /* DTDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDevices.h; sourceTree = "<group>"; };
 		96554BF71D70A04D0017E783 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		96554BF91D70A2D10017E783 /* libdtdev.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdtdev.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96554BF81D70A04D0017E783 /* ExternalAccessory.framework in Frameworks */,
+				96554BFA1D70A2D10017E783 /* libdtdev.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +136,7 @@
 		96554BEF1D709D140017E783 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				96554BF91D70A2D10017E783 /* libdtdev.a */,
 				96554BF51D70A0270017E783 /* DTDevices-Bridging-Header.h */,
 				96554BF61D70A0270017E783 /* DTDevices.h */,
 				96554BF71D70A04D0017E783 /* ExternalAccessory.framework */,
@@ -447,6 +451,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "infineax-leds/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/infineax-leds",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshuadavidkelley.infineax-leds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -458,6 +466,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "infineax-leds/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/infineax-leds",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshuadavidkelley.infineax-leds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
