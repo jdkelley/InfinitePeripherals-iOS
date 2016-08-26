@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         if blueSwitch.on {
             mask += 4
         }
-        log("Mask (\(mask) Sent: \(String(mask, radix: 2)))")
+        log("Mask (\(mask)) Sent: \(String(mask, radix: 2))")
         
         passLEDMask(mask)
     }
