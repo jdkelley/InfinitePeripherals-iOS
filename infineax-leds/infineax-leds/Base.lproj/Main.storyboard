@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +17,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disconnected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvu-YY-K8p">
+                                <rect key="frame" x="261" y="20" width="78" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GPm-Sg-2qp">
+                                <rect key="frame" x="70" y="65" width="51" height="31"/>
+                                <color key="onTintColor" red="0.2470588235" green="0.4549019608" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="VkB-Or-2PH"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RjF-RA-fqH">
+                                <rect key="frame" x="481" y="65" width="51" height="31"/>
+                                <color key="onTintColor" red="0.36862745099999999" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="m4h-cA-NBU"/>
+                                </connections>
+                            </switch>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k7i-8Z-voW">
+                                <rect key="frame" x="0.0" y="126" width="600" height="454"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ph2-JL-2jH">
+                                <rect key="frame" x="276" y="65" width="51" height="31"/>
+                                <color key="onTintColor" red="0.90196078430000004" green="0.1529411765" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="nJH-hD-9OZ"/>
+                                </connections>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RjF-RA-fqH" firstAttribute="baseline" secondItem="Ph2-JL-2jH" secondAttribute="baseline" id="51W-Da-kGT"/>
+                            <constraint firstItem="GPm-Sg-2qp" firstAttribute="top" secondItem="Xvu-YY-K8p" secondAttribute="bottom" constant="30" id="8KA-d6-KKw"/>
+                            <constraint firstItem="GPm-Sg-2qp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="AJd-9o-Khd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RjF-RA-fqH" secondAttribute="trailing" constant="50" id="Cn3-TT-qDL"/>
+                            <constraint firstItem="Ph2-JL-2jH" firstAttribute="centerX" secondItem="Xvu-YY-K8p" secondAttribute="centerX" id="S2h-9y-uVZ"/>
+                            <constraint firstItem="Xvu-YY-K8p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="VRR-7Z-WyU"/>
+                            <constraint firstItem="Ph2-JL-2jH" firstAttribute="baseline" secondItem="GPm-Sg-2qp" secondAttribute="baseline" id="Xlc-nv-Gtu"/>
+                            <constraint firstItem="k7i-8Z-voW" firstAttribute="top" secondItem="Ph2-JL-2jH" secondAttribute="bottom" constant="30" id="fG0-AV-ius"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k7i-8Z-voW" secondAttribute="bottom" constant="20" id="h21-6k-nX2"/>
+                            <constraint firstItem="k7i-8Z-voW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iSZ-6d-UpO"/>
+                            <constraint firstAttribute="trailing" secondItem="k7i-8Z-voW" secondAttribute="trailing" id="ibX-zy-1vg"/>
+                            <constraint firstItem="Xvu-YY-K8p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="laK-ea-eKn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueSwitch" destination="GPm-Sg-2qp" id="IQs-OT-e0s"/>
+                        <outlet property="connectionStateLabel" destination="Xvu-YY-K8p" id="Uz1-om-hNR"/>
+                        <outlet property="greenSwitch" destination="RjF-RA-fqH" id="pbl-IY-yZd"/>
+                        <outlet property="loggingTextView" destination="k7i-8Z-voW" id="xAs-B1-1ya"/>
+                        <outlet property="redSwitch" destination="Ph2-JL-2jH" id="OXD-lt-eac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

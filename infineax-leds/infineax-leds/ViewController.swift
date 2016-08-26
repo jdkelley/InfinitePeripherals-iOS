@@ -10,8 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // MARK: - Properties
+    
     var device = DTDevices()
+    
+    // MARK: Outlets
 
+    @IBOutlet weak var connectionStateLabel: UILabel!
+    
+    @IBOutlet weak var blueSwitch: UISwitch!
+    @IBOutlet weak var redSwitch: UISwitch!
+    @IBOutlet weak var greenSwitch: UISwitch!
+    
+    @IBOutlet weak var loggingTextView: UITextView!
+    
+    @IBAction func switchToggled(sender: AnyObject) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +47,8 @@ extension ViewController : DTDeviceDelegate {
         guard let newState = IPConnectionState(rawValue: state) else {
             return
         }
+        
+        connectionStateLabel.text = newState.toString()
         
         log("Connection State: \(newState.toString())")
     }
