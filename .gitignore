@@ -1,6 +1,9 @@
 
 # Created by https://www.gitignore.io/api/swift,osx,xcode
 
+### Infinite Peripherals ###
+libdtdev.a
+
 ### Swift ###
 # Xcode
 #
