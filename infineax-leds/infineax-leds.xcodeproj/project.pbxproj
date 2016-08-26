@@ -14,6 +14,7 @@
 		96554BCC1D709C750017E783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96554BCA1D709C750017E783 /* LaunchScreen.storyboard */; };
 		96554BD71D709C750017E783 /* infineax_ledsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96554BD61D709C750017E783 /* infineax_ledsTests.swift */; };
 		96554BE21D709C750017E783 /* infineax_ledsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96554BE11D709C750017E783 /* infineax_ledsUITests.swift */; };
+		96554BF41D709D5F0017E783 /* IPConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96554BF31D709D5F0017E783 /* IPConnectionState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		96554BDD1D709C750017E783 /* infineax-ledsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "infineax-ledsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96554BE11D709C750017E783 /* infineax_ledsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infineax_ledsUITests.swift; sourceTree = "<group>"; };
 		96554BE31D709C750017E783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96554BF31D709D5F0017E783 /* IPConnectionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPConnectionState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,10 @@
 		96554BC01D709C750017E783 /* infineax-leds */ = {
 			isa = PBXGroup;
 			children = (
-				96554BC11D709C750017E783 /* AppDelegate.swift */,
-				96554BC31D709C750017E783 /* ViewController.swift */,
-				96554BC51D709C750017E783 /* Main.storyboard */,
-				96554BC81D709C750017E783 /* Assets.xcassets */,
-				96554BCA1D709C750017E783 /* LaunchScreen.storyboard */,
-				96554BCD1D709C750017E783 /* Info.plist */,
+				96554BF21D709D310017E783 /* Model */,
+				96554BF11D709D2F0017E783 /* View */,
+				96554BF01D709D2D0017E783 /* Controller */,
+				96554BEF1D709D140017E783 /* Library */,
 			);
 			path = "infineax-leds";
 			sourceTree = "<group>";
@@ -123,6 +123,41 @@
 				96554BE31D709C750017E783 /* Info.plist */,
 			);
 			path = "infineax-ledsUITests";
+			sourceTree = "<group>";
+		};
+		96554BEF1D709D140017E783 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		96554BF01D709D2D0017E783 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96554BC31D709C750017E783 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		96554BF11D709D2F0017E783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96554BC51D709C750017E783 /* Main.storyboard */,
+				96554BC81D709C750017E783 /* Assets.xcassets */,
+				96554BCA1D709C750017E783 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		96554BF21D709D310017E783 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96554BC11D709C750017E783 /* AppDelegate.swift */,
+				96554BCD1D709C750017E783 /* Info.plist */,
+				96554BF31D709D5F0017E783 /* IPConnectionState.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96554BC41D709C750017E783 /* ViewController.swift in Sources */,
+				96554BF41D709D5F0017E783 /* IPConnectionState.swift in Sources */,
 				96554BC21D709C750017E783 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
