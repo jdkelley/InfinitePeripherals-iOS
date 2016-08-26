@@ -1,0 +1,3 @@
+libdtdev.a linguist-vendored=true
+DTDevices-Bridging-Header.h linguist-vendored=true
+DTDevices.h linguist-vendored=true
