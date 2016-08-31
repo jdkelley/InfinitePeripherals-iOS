@@ -44,6 +44,8 @@ Because all three LED arrays are independent and nearly on top of each other, yo
   
 Simply passing 0 to ```uiControlLEDsWithBitMask``` will turn off the LEDs.
 
+Resulting illuminated LEDs having passed 001 to ```uiControlLEDsWithBitMask```.
+
   ![](/docs/operation.jpg)
 
 ## Who do I talk to? ##
