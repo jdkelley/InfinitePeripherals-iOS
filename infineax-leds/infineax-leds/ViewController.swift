@@ -26,15 +26,15 @@ class ViewController: UIViewController {
     
     // MARK: Actions
     
-    @IBAction func switchToggled(sender: AnyObject) {
+    @IBAction func switchToggled(_ sender: AnyObject) {
         var mask: UInt32 = 0
-        if greenSwitch.on {
+        if greenSwitch.isOn {
             mask += 1
         }
-        if redSwitch.on {
+        if redSwitch.isOn {
             mask += 2
         }
-        if blueSwitch.on {
+        if blueSwitch.isOn {
             mask += 4
         }
         log("Mask (\(mask)) Sent: \(String(mask, radix: 2))")
@@ -52,24 +52,24 @@ class ViewController: UIViewController {
 
     }
 
-    private func log(text: String) {
+    fileprivate func log(_ text: String) {
         NSLog(text)
-        loggingTextView.text.appendContentsOf("\r\n" + "\(NSDate()) > " + text)
+        loggingTextView.text.append("\r\n" + "\(Date()) > " + text)
     }
 }
 
 extension ViewController : DTDeviceDelegate {
     
-    func passLEDMask(mask: UInt32) {
+    func passLEDMask(_ mask: UInt32) {
         do {
-            try device.uiControlLEDsWithBitMask(mask)
+            try device.uiControlLEDs(withBitMask: mask)
         } catch {
             log("Could not set LED")
         }
     }
     
     // Gets called by DTDevices every time the connectionState changes.
-    func connectionState(state: Int32) {
+    func connectionState(_ state: Int32) {
         guard let newState = IPConnectionState(rawValue: state) else {
             return
         }

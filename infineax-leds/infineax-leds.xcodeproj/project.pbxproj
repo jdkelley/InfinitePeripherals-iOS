@@ -240,13 +240,16 @@
 				TargetAttributes = {
 					96554BBD1D709C750017E783 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					96554BD11D709C750017E783 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 96554BBD1D709C750017E783;
 					};
 					96554BDC1D709C750017E783 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 96554BBD1D709C750017E783;
 					};
 				};
@@ -458,6 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshuadavidkelley.infineax-leds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "infineax-leds/DTDevices-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -474,6 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshuadavidkelley.infineax-leds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "infineax-leds/DTDevices-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -485,6 +490,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshuadavidkelley.infineax-ledsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/infineax-leds.app/infineax-leds";
 			};
 			name = Debug;
@@ -497,6 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshuadavidkelley.infineax-ledsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/infineax-leds.app/infineax-leds";
 			};
 			name = Release;
@@ -508,6 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshuadavidkelley.infineax-ledsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "infineax-leds";
 			};
 			name = Debug;
@@ -519,6 +527,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshuadavidkelley.infineax-ledsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "infineax-leds";
 			};
 			name = Release;
@@ -542,6 +551,7 @@
 				96554BE81D709C750017E783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96554BE91D709C750017E783 /* Build configuration list for PBXNativeTarget "infineax-ledsTests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +560,7 @@
 				96554BEB1D709C750017E783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96554BEC1D709C750017E783 /* Build configuration list for PBXNativeTarget "infineax-ledsUITests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +569,7 @@
 				96554BEE1D709C750017E783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

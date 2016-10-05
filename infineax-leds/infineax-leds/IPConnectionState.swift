@@ -29,15 +29,15 @@ import Foundation
  */
 enum IPConnectionState: Int32 {
     
-    case Disconnected = 0
-    case Connecting = 1
-    case Connected = 2
+    case disconnected = 0
+    case connecting = 1
+    case connected = 2
     
     func toString() -> String {
         switch self {
-        case Disconnected : return "Disconnected"
-        case Connecting   : return "Connecting"
-        case Connected    : return "Connected"
+        case .disconnected : return "Disconnected"
+        case .connecting   : return "Connecting"
+        case .connected    : return "Connected"
         }
     }
 }
