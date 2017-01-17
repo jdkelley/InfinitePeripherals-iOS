@@ -14,22 +14,22 @@ OS Version: 10.12.2 (16C67)
 SDK Version: 
 Devices Compatable with SDK:
 
-	* DPP250
-	* DPP255
-	* DPP350
-	* DPP450
-	* Infinea BluePad
-	* Infinea mPOS
-	* Infinea mPOS Flat
-	* Infinea Omni
-	* Infinea Tab 2
-	* Infinea Tab 4
-	* Infinea Tab M
-	* Infinea X
-	* Linea Pro 4
-	* Linea Pro 5
-	* Linea Pro 6
-	* Linea Pro 7
+* DPP250
+* DPP255
+* DPP350
+* DPP450
+* Infinea BluePad
+* Infinea mPOS
+* Infinea mPOS Flat
+* Infinea Omni
+* Infinea Tab 2
+* Infinea Tab 4
+* Infinea Tab M
+* Infinea X
+* Linea Pro 4
+* Linea Pro 5
+* Linea Pro 6
+* Linea Pro 7
 
 ## Examples ##
 
