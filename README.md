@@ -1,19 +1,50 @@
-# Welcome to the Infinea X SDK using Swift Explained #
+# Using the Inifinite Peripherals DTDevices SDK with iOS (Swift) #
 
-This is a sample iOS application demonstrating the control of LED arrays on a Infinite Peripherals device that uses the DTDevices SDK. These examples were developed using the Infinea X.
+Some sample iOS applications demonstrating the Infinite Peripherals DTDevices SDK in iOS. These examples were developed using the Infinea X. 
 
 This example exists to supplement incomplete or insufficient documentation around the DTDevices SDK. 
 
-## Controlling LED Array Example ##
+## Some General Info
 
-### Getting Started ###
+Language: Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)
+Xcode Version: 8.2.1 (8C1002)
+OS Version: 10.12.2 (16C67)
+
+
+SDK Version: 
+Devices Compatable with SDK:
+	* DPP250
+	* DPP255
+	* DPP350
+	* DPP450
+	* Infinea BluePad
+	* Infinea mPOS
+	* Infinea mPOS Flat
+	* Infinea Omni
+	* Infinea Tab 2
+	* Infinea Tab 4
+	* Infinea Tab M
+	* Infinea X
+	* Linea Pro 4
+	* Linea Pro 5
+	* Linea Pro 6
+	* Linea Pro 7
+
+## Examples ##
+
+* [LED Array](/docs/infineax-led-array.md)
+
+Examples on the roadmap can be found [here](/roadmap.md).
+
+## Getting Started ##
 
 * Clone the repository 
 
 ```
-$ git clone https://github.com/jdkelley/InfineaX-ControlLEDs.git
+$ git clone https://github.com/jdkelley/InfinitePeripherals-iOS.git
 ```
 
+* Select one of the example projects and open it in Xcode
 * Add Dependencies
     * If you do not have a developer account with Infinite Peripherals, [create one](https://developer.ipcmobile.com/).
     * [Download](https://developer.ipcmobile.com/downloads/?showcat=Infinea) the latest version of the DTDevices SDK under "Infinea X."
@@ -22,34 +53,8 @@ $ git clone https://github.com/jdkelley/InfineaX-ControlLEDs.git
 
 * Build and run the project.
 
-## How it works ##
-
-The SDK controls the LED arrays by passing a bit mask (as a ```UInt32```) to the ```uiControlLEDsWithBitMask``` instance method on the ```DTDevices``` object.
-
-The bit mask is a three bit bit mask where the first bit controls the green LED array, the second bit controls the red LED array, and the third bit controls the blue LED array. The follow diagram illustrates this. 
+![](/led-operation.jpg)
   
-  ![](/docs/breakdown.png)
-  
-To turn on the green LED arrays, pass 001 to ```uiControlLEDsWithBitMask```.
-  
-  ![](/docs/green.png)
-
-Likewise, to turn on the blue LED arrays, pass 100 to ```uiControlLEDsWithBitMask```. 
-  
-  ![](/docs/blue.png)
-  
-Because all three LED arrays are independent and nearly on top of each other, you can use a superposition of these Red, Green, and Blue color states to simulate other colors. For example, passing 011 (or 3) will turn on the red array and the green array resulting in a color close to orange. 
-  
-  ![](/docs/orange.png)
-  
-Simply passing 0 to ```uiControlLEDsWithBitMask``` will turn off the LEDs.
-
-Resulting illuminated LEDs having passed 001 to ```uiControlLEDsWithBitMask```:
-
-  ![](/docs/operation.jpg)
-
-Note: There is a blue LED lit because the onboard sled speaker is on. 
-
 ## Who do I talk to? ##
 
 If you have a Infinea X feature you would like to see added or have an example, feel free to create a pull request or [Email Us](mailto:infineaxexamples@gmail.com?Subject=Infinea%20X%20Example%20Suggestion).
@@ -57,3 +62,5 @@ If you have a Infinea X feature you would like to see added or have an example, 
 ## License ##
 
 These Examples are released under the [MIT License](http://www.opensource.org/licenses/MIT).
+
+The Infinite Peripherals SDK is proprietary and we do not claim to grant license.
