@@ -8,19 +8,19 @@ This example exists to supplement incomplete or insufficient documentation aroun
 
 ### Getting Started ###
 
-1. Clone the repository 
+* Clone the repository 
 
 ```
 $ git clone https://github.com/jdkelley/InfineaX-ControlLEDs.git
 ```
 
-2. Add Dependencies
+* Add Dependencies
     * If you do not have a developer account with Infinite Peripherals, [create one](https://developer.ipcmobile.com/).
     * [Download](https://developer.ipcmobile.com/downloads/?showcat=Infinea) the latest version of the DTDevices SDK under "Infinea X."
     * Open the example's Xcode project file.
     * Drag the libdtdev.a file from SDK's Library directory to the Library group in the example's Xcode project.
 
-3. Build and run the project.
+* Build and run the project.
 
 ## How it works ##
 
@@ -47,6 +47,8 @@ Simply passing 0 to ```uiControlLEDsWithBitMask``` will turn off the LEDs.
 Resulting illuminated LEDs having passed 001 to ```uiControlLEDsWithBitMask```:
 
   ![](/docs/operation.jpg)
+
+Note: There is a blue LED lit because the onboard sled speaker is on. 
 
 ## Who do I talk to? ##
 
