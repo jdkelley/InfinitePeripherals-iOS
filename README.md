@@ -13,6 +13,7 @@ OS Version: 10.12.2 (16C67)
 
 SDK Version: 
 Devices Compatable with SDK:
+
 	* DPP250
 	* DPP255
 	* DPP350
@@ -53,7 +54,7 @@ $ git clone https://github.com/jdkelley/InfinitePeripherals-iOS.git
 
 * Build and run the project.
 
-![](/led-operation.jpg)
+![](/docs/led-operation.jpg)
   
 ## Who do I talk to? ##
 
