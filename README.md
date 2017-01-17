@@ -7,7 +7,9 @@ This example exists to supplement incomplete or insufficient documentation aroun
 ## Some General Info
 
 Language: Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)
+
 Xcode Version: 8.2.1 (8C1002)
+
 OS Version: 10.12.2 (16C67)
 
 
