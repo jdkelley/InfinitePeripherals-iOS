@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Change documentation to make led project one of many
+- [ ] Change documentation to make led project one of many (in progress)
 - [ ] Example to get Connection State
 - [ ] Example to recieve barcode data
 - [ ] Example to set and get passthroughsync state
